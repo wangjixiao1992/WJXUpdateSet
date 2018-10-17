@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E56BC6CA21770131009F8C54 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E56BC6C921770131009F8C54 /* Info.plist */; };
 		E5F8F6AA2137830A00BD9CE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F8F69F2137830A00BD9CE5 /* Assets.xcassets */; };
 		E5F8F6AB2137830A00BD9CE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F8F6A02137830A00BD9CE5 /* main.m */; };
 		E5F8F6AC2137830A00BD9CE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F8F6A12137830A00BD9CE5 /* AppDelegate.m */; };
-		E5F8F6AD2137830A00BD9CE5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5F8F6A22137830A00BD9CE5 /* Info.plist */; };
 		E5F8F6AF2137830A00BD9CE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F8F6A82137830A00BD9CE5 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -18,11 +18,11 @@
 		E555E3F32137822100FB75F8 /* WJXAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJXAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56BC6C72176CF0F009F8C54 /* HeaderCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderCode.h; sourceTree = "<group>"; };
 		E56BC6C82176CF1B009F8C54 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E56BC6C921770131009F8C54 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WJXAlertView/Info.plist; sourceTree = SOURCE_ROOT; };
 		E5F8F69E2137830A00BD9CE5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5F8F69F2137830A00BD9CE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5F8F6A02137830A00BD9CE5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E5F8F6A12137830A00BD9CE5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E5F8F6A22137830A00BD9CE5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5F8F6A82137830A00BD9CE5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E5F8F6A92137830A00BD9CE5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,11 +66,11 @@
 		E5F8F69D2137830A00BD9CE5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E56BC6C921770131009F8C54 /* Info.plist */,
 				E5F8F69E2137830A00BD9CE5 /* AppDelegate.h */,
 				E5F8F6A12137830A00BD9CE5 /* AppDelegate.m */,
 				E5F8F69F2137830A00BD9CE5 /* Assets.xcassets */,
 				E5F8F6A02137830A00BD9CE5 /* main.m */,
-				E5F8F6A22137830A00BD9CE5 /* Info.plist */,
 				E56BC6C82176CF1B009F8C54 /* PrefixHeader.pch */,
 				E56BC6C72176CF0F009F8C54 /* HeaderCode.h */,
 			);
@@ -151,7 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5F8F6AD2137830A00BD9CE5 /* Info.plist in Resources */,
+				E56BC6CA21770131009F8C54 /* Info.plist in Resources */,
 				E5F8F6AA2137830A00BD9CE5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +290,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4AYBFTRT4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WJXAlertView/Supporting Files/PrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/WJXAlertView/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/WJXAlertView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4AYBFTRT4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WJXAlertView/Supporting Files/PrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/WJXAlertView/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/WJXAlertView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

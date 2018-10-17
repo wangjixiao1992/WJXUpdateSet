@@ -7,7 +7,7 @@ project_path=$(dirname $0)
 #project工程文件路径
 folder_ProjectPath=${project_path}/${project_name}/${project_name}.xcodeproj/project.pbxproj
 #infor文件路径
-folder_InfoPath=${project_path}/${project_name}/${project_name}/Supporting\ Files/info.plist
+folder_InfoPath=${project_path}/${project_name}/${project_name}/info.plist
 
 
 #============== 选择模式 ========================#
@@ -44,11 +44,6 @@ echo "上传的构建号："
 read buildCode
 done
 
-echo ${folder_InfoPath}
-
-/usr/libexec/PlistBuddy -c "Set CFBundleShortVersionString ${versionCode}" ${folder_InfoPath}
-/usr/libexec/PlistBuddy -c "Set CFBundleVersion ${buildCode}" ${folder_InfoPath}
-
 ##修改参数
 if [ $APPNumber == 2 ] ;then
    #马甲包
@@ -59,6 +54,13 @@ else
    sed -i -r 's/ASSETCATALOG_COMPILER_APPICON_NAME.*$/ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;/g' ${folder_ProjectPath}
    sed -i -r 's/ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME.*$/ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;/g' ${folder_ProjectPath}
 fi
+
+if [[ -f ${folder_InfoPath} ]]; then
+   /usr/libexec/PlistBuddy -c "Set CFBundleShortVersionString ${versionCode}" ${folder_InfoPath}
+   /usr/libexec/PlistBuddy -c "Set CFBundleVersion ${buildCode}" ${folder_InfoPath}
+fi
+
+
 if [[ -f ${folder_InfoPath}-r ]]; then
    rm -rf ${folder_InfoPath}-r
 fi
